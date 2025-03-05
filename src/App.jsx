@@ -1,11 +1,14 @@
 import React from "react";
 
 import { Router } from "./router/Router";
+import { UserProvider } from "./providers/UserProvider";
 
 
 
 export default function App() {
   return (
-    <Router />
+    <UserProvider>
+      <Router />
+    </UserProvider>
   );
 }
