@@ -1,12 +1,12 @@
+import { Outlet } from "react-router";
 import { Header } from "../atoms/layout/Header";
 
-export const HeaderOnly = (props) => {
-  const { children } = props;
+export const HeaderOnly = () => {
 
   return (
     <>
       <Header />
-      {children}
+      <Outlet />
     </>
   );
 };
